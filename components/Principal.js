@@ -26,7 +26,7 @@ let deviceWidth = Dimensions.get('window').width
 
 const styles = StyleSheet.create({
     container:{
-        width:deviceWidth,
+        // width:deviceWidth,
         alignItems:'center',
         paddingHorizontal:25,
         marginTop:60,
@@ -34,30 +34,32 @@ const styles = StyleSheet.create({
     labelTitle:{
         display:'flex',
         flexDirection:'row',
-        margin:0,
-        justifyContent: 'center',
-        padding: 5
+        // margin:0,
+        // justifyContent: 'center',
+        // padding: 5
     },
     labelLaika:{
         fontWeight:'bold',
         color:'#ffff',
-        fontSize:42,
+        fontSize:40,
+        margin:0
     },
     labelMembers:{
         fontWeight:'bold',
         color:'#ffc200',
-        fontSize:42,
+        fontSize:40,
+        marginLeft:-5
+
     },
     textTitle:{
-        alignItems:'center',
-        fontSize:17,
+        fontSize:16,
         color:'white',
         textAlign:'center'
     },
     card:{
+        width: '100%',
         marginTop: -30,
-        marginHorizontal:'10%',
-        width: '86%',
+        marginHorizontal:'2%',
     }
     
 })

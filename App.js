@@ -1,6 +1,7 @@
 
 import React from 'react';
 import {
+  Dimensions,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -49,9 +50,11 @@ const App = () => {
     </>
   );
 };
+let deviceWidth = Dimensions.get('window').width
 
 const styles = StyleSheet.create({
   maincontainer:{
+    width:deviceWidth,
     // flex:1,
     backgroundColor:"#a47cd0",
     // width:500,
