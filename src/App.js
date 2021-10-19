@@ -22,8 +22,10 @@ import Beneficios from './components/Beneficios';
 import Calculadora from './components/Calculadora';
 import Experiencias from './components/Experiencias';
 import Principal from './components/Principal';
-import Card from './assets/card_member.png'
-
+import Card from './assets/card_member.png';
+import Hueso from './assets/hueso.png';
+import ArrowD from './assets/arrow_down.png';
+import People from './assets/image12.png';
 
 
 const App = () => {
@@ -37,7 +39,7 @@ const App = () => {
      {/* <Text>App</Text> */}
         <View>
           <Principal image={Card}/>
-          <Beneficios />
+          <Beneficios image={Hueso}/>
           <Calculadora />
           <Experiencias />
 
