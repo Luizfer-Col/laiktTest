@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     borderColor: '#ffc200',
     borderWidth: 1,
     borderRadius: 18,
-    marginHorizontal: '5%',
+    marginHorizontal: '8%',
     marginTop: -25,
   },
   beneficios:{
