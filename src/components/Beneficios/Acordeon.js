@@ -9,16 +9,12 @@ import {
   UIManager,
   View,
 } from 'react-native';
+import otrosBeneficios from '../../utils/otrosBeneficios';
+import arrow from '../../assets/arrow_down.png'
 
-const Acordeon = ({arrow, image}) => {
+
+const Acordeon = () => {
   const [expanded, setExpanded] = useState(false);
-
-  const otrosBeneficios = [
-    {key: 'Regalo de bienvenida', img: image},
-    {key: 'Bono de Netflix para maratonear', img: image},
-    {key: 'Beneficios en restaurantes y tiendas', img: image},
-    {key: 'Por cada pedido Laika donará a una fundación', img: image},
-  ];
 
   if (Platform.OS === 'android') {
     UIManager.setLayoutAnimationEnabledExperimental(true);
@@ -29,24 +25,34 @@ const Acordeon = ({arrow, image}) => {
     setExpanded(!expanded);
   };
 
-  // const Item =
 
   return (
     <View>
       <TouchableOpacity onPress={() => toggleExpand()} style={styles.row}>
         <Text style={styles.labelbeneficio}>
-          Ver otros beneficios <Image style={styles.hueso} source={arrow} />
+          Ver otros beneficios
+          <View>
+            {expanded ? (
+              <Image
+                source={arrow}
+                style={(styles.flecha, {transform: [{rotate: '180deg'}]})}
+              />
+            ) : (
+              <Image source={arrow} style={styles.flecha} />
+            )}
+          </View>
         </Text>
       </TouchableOpacity>
-      {expanded && <View>
-          {otrosBeneficios.map(item => (
-            <View style={styles.listado}>
+      {expanded && (
+        <View>
+          {otrosBeneficios.map((item, index) => (
+            <View key={index} style={styles.listado}>
               <Image style={styles.hueso} source={item.img} />
-              <Text style={styles.content}>{item.key}</Text>
+              <Text style={styles.content}>{item.text}</Text>
             </View>
           ))}
         </View>
-      }
+      )}
     </View>
   );
 };
@@ -62,6 +68,7 @@ const styles = StyleSheet.create({
     paddingRight: 18,
     alignItems: 'center',
     // backgroundColor: Colors.CGRAY,
+    alignContent: 'center',
   },
   parentHr: {
     height: 1,
@@ -72,6 +79,12 @@ const styles = StyleSheet.create({
     // backgroundColor: Colors.LIGHTGRAY,
     // padding:16,
   },
+  flecha: {
+    height: 25,
+    width: 25,
+    // marginRight: '2%',
+    marginBottom: -8,
+  },
   hueso: {
     height: 15,
     width: 15,
@@ -81,6 +94,8 @@ const styles = StyleSheet.create({
   labelbeneficio: {
     color: 'white',
     fontSize: 14,
+    flexDirection: 'row',
+    justifyContent: 'center',
   },
   listado: {
     display: 'flex',
@@ -88,6 +103,7 @@ const styles = StyleSheet.create({
     width: '80%',
     marginBottom: 18,
     // justifyContent:'flex-start'
+    // transform: [{rotate: '180deg'}]
   },
   content: {
     color: 'white',

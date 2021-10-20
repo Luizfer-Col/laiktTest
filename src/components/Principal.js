@@ -47,14 +47,14 @@ const styles = StyleSheet.create({
 
     },
     textTitle:{
-        fontSize:18,
+        fontSize:16.5,
         color:'white',
         textAlign:'center'
     },
     card:{
-        width: '92%',
-        marginTop: -20,
-        marginHorizontal:'2%',
+        width: '84%',
+        marginTop: -30,
+        marginHorizontal:'8%',
     }
     
 })
