@@ -25,7 +25,7 @@ import Principal from './components/Principal';
 import Card from './assets/card_member.png';
 import Hueso from './assets/hueso.png';
 import ArrowD from './assets/arrow_down.png';
-import People from './assets/image12.png';
+import Arrow from './assets/arrow.png';
 
 
 const App = () => {
@@ -39,7 +39,7 @@ const App = () => {
      {/* <Text>App</Text> */}
         <View>
           <Principal image={Card}/>
-          <Beneficios image={Hueso}/>
+          <Beneficios image1={Hueso} image2={ArrowD} image3={Arrow}/>
           <Calculadora />
           <Experiencias />
 

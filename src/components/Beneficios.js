@@ -1,21 +1,22 @@
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
+import Acordeon from './Acordeon';
 // import Hueso from '../assets/"Group 2533"'
 
-const Beneficios = ({image}) => {
+const Beneficios = ({image1, image2, image3}) => {
   return (
     <View style={styles.containerbeneficios}>
         <View style={styles.beneficios}>
         <Text style={styles.labelbeneficio}>Beneficios los 365 dias del año</Text>
       <View style={styles.listado}>
-        <Image source={image} style={styles.hueso} />
+        <Image source={image1} style={styles.hueso} />
         <Text style={styles.content}>
           <Text style={{color: '#ffc200', fontWeight: 'bold'}}>15%</Text> de
           descuento en todos los productos{' '}
         </Text>
       </View>
       <View style={styles.listado}>
-        <Image source={image} style={styles.hueso} />
+        <Image source={image1} style={styles.hueso} />
         <Text style={styles.content}>
           {' '}
           Domicilio{' '}
@@ -23,6 +24,7 @@ const Beneficios = ({image}) => {
           <Text style={{fontSize: 12}}> * a partir de $120.000</Text>
         </Text>
       </View>
+        <Acordeon arrow={image2} image={image3}/>
 
         </View>
 
