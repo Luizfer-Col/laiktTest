@@ -26,6 +26,10 @@ import Card from './assets/card_member.png';
 import Hueso from './assets/hueso.png';
 import ArrowD from './assets/arrow_down.png';
 import Arrow from './assets/arrow.png';
+import Persona1 from './assets/persona1.png';
+import Persona2 from './assets/persona2.png';
+import Persona3 from './assets/persona3.png';
+
 
 
 const App = () => {
@@ -41,7 +45,7 @@ const App = () => {
           <Principal image={Card}/>
           <Beneficios image1={Hueso} image2={ArrowD} image3={Arrow}/>
           <Calculadora />
-          <Experiencias />
+          <Experiencias persona1={Persona1} persona2={Persona2} persona3={Persona3}/>
 
 
 
