@@ -2,10 +2,15 @@ import {StyleSheet} from 'react-native';
 import s from '../../Style';
 
 export const styles = StyleSheet.create({
+  containerarrow:{width:'10%', 
+  margin:'4%',
+},
+  arrow:{
+    transform: [{rotate: '90deg'}]
+  },
   container: {
     alignItems: 'center',
     paddingHorizontal: 25,
-    marginTop: '18%',
   },
   labelTitle: {
     display: 'flex',
