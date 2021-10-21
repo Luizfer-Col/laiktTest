@@ -1,11 +1,12 @@
 import { StyleSheet } from "react-native";
+import  s from '../../Style'
 
-export const styles = StyleSheet.create({
+ const styles = StyleSheet.create({
     containerbeneficios: {
-      backgroundColor: '#653f90',
+      backgroundColor: s.color.darkslateblue,
       paddingHorizontal: '5%',
       paddingVertical: '10%',
-      borderColor: '#ffc200',
+      borderColor: s.color.gold,
       borderWidth: 1,
       borderRadius: 18,
       marginHorizontal: '6%',
@@ -14,10 +15,11 @@ export const styles = StyleSheet.create({
     beneficios: {
       borderWidth: 1,
       borderStyle: 'dashed',
-      borderTopColor: '#653f90',
-      borderRightColor: '#653f90',
-      borderLeftColor: '#653f90',
-      borderBottomColor: 'yellow',
+      borderTopColor: s.color.darkslateblue,
+      borderRightColor: s.color.darkslateblue,
+      borderLeftColor: s.color.darkslateblue,
+      borderBottomColor: s.color.gold,
     }
   });
   
+  export default styles

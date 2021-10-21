@@ -1,17 +1,19 @@
 import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { styles } from './Adquirir.style';
+import  s from '../../Style'
+
 
 const Adquirir = () => {
   return (
     <View>
 
       <View style={styles.container}>
-        <View style={styles.containerizq}>
+        <View>
           <Text style={styles.textoizquierda}>Paga únicamente</Text>
           <Text style={styles.textoprecio}>
             $69.900
-            <Text style={{fontWeight: '200'}}>/año</Text>
+            <Text style={{fontFamily: s.ff.Thin}}>/año</Text>
           </Text>
         </View>
 
@@ -24,7 +26,7 @@ const Adquirir = () => {
 
       <TouchableOpacity>
         <View style={styles.button}>
-          <Text style={styles.texto}>Adquirir membresía</Text>
+          <Text style={styles.textobutton}>Adquirir membresía</Text>
         </View>
       </TouchableOpacity>
 

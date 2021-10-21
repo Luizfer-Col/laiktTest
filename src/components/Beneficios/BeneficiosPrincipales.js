@@ -10,7 +10,7 @@ const Beneficios = () => {
       <View style={styles.listado}>
         <Image source={Hueso} style={styles.hueso} />
         <Text style={styles.content}>
-          <Text style={{color: '#ffc200', fontWeight: 'bold'}}>15%</Text> de
+          <Text style={styles.porcentaje}>15%</Text> de
           descuento en todos los productos
         </Text>
       </View>
@@ -18,8 +18,8 @@ const Beneficios = () => {
         <Image source={Hueso} style={styles.hueso} />
         <Text style={styles.content}>
           Domicilio
-          <Text style={{color: '#ffc200', fontWeight: 'bold'}}> gratis</Text>
-          <Text style={{fontSize: 12}}> *a partir de $120.000</Text>
+          <Text style={styles.porcentaje}> gratis</Text>
+          <Text style={{fontSize: 12.5}}> *a partir de $120.000</Text>
         </Text>
       </View>
     </View>

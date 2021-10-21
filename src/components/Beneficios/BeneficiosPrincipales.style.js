@@ -1,47 +1,31 @@
 import { StyleSheet } from "react-native";
+import  s from '../../Style'
+
 
 const styles = StyleSheet.create({
-    containerbeneficios: {
-      // display:'flex',
-      backgroundColor: '#653f90',
-      paddingHorizontal: '5%',
-      paddingVertical: '10%',
-      borderColor: '#ffc200',
-      borderWidth: 1,
-      borderRadius: 18,
-      marginHorizontal: '6%',
-      marginTop: -25,
-    },
-    beneficios: {
-      borderWidth: 1,
-      borderStyle: 'dashed',
-      borderTopColor: '#653f90',
-      borderRightColor: '#653f90',
-      borderLeftColor: '#653f90',
-      borderBottomColor: 'yellow',
-    },
     labelbeneficio: {
-      color: 'white',
+      color: s.color.white,
       fontSize: 14,
+      fontFamily: s.ff.SemiBold
     },
     content: {
-      color: 'white',
+      color: s.color.white,
       fontSize: 18,
+      fontFamily: s.ff.SemiBold
+    },
+    porcentaje:{
+      color: s.color.gold,
+      fontFamily: s.ff.Bold
     },
     listado: {
       display: 'flex',
       flexDirection: 'row',
-      // width: '100%',
       marginVertical: 10,
-      // justifyContent:'flex-start'
     },
-    // listado:{
-    //     padding:5
-    // },
     hueso: {
       height: 15,
       width: 15,
-      marginRight: '2%',
+      marginRight: '3%',
       marginTop: 5,
     },
   });

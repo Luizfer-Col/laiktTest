@@ -3,9 +3,9 @@ import { View } from 'react-native';
 import Acordeon from './Acordeon';
 import Adquirir from './Adquirir';
 import BeneficiosPrincipales from './BeneficiosPrincipales';
-import styles from './BeneficiosPrincipales.style';
+import styles from './index.style';
 
-const Beneficios = ({image1}) => {
+const Beneficios = () => {
   return (
     <View style={styles.containerbeneficios}>
       <View style={styles.beneficios}>

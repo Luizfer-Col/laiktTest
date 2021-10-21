@@ -1,46 +1,54 @@
 import { StyleSheet } from "react-native";
 import { deviceWidth } from "../../App.style";
+import s from '../../Style'
 
-const font = size =>(
-  deviceWidth>360?size:size-1
-)
+
 
 export const styles = StyleSheet.create({
+
+    title: {
+      fontSize: s.fs(30),
+      marginHorizontal: '16%',
+      marginBottom: 15,
+      textAlign: 'center',
+      color: s.color.white,
+      fontFamily: s.ff.ExtraBold,
+      lineHeight: 40
+      
+    },
     container: {
       alignItems: 'flex-start',
       display: 'flex',
       flexDirection: 'row',
       marginHorizontal: '7%',
       marginVertical: '1%',
-      paddingHorizontal: '4%',
+      paddingLeft: '4%',
+      paddingRight: '3%',
       paddingVertical: '4%',
       backgroundColor: '#653f90',
       borderRadius: 15,
       width: '86%',
     },
-    title: {
-      fontSize: font(30),
-      fontWeight: 'bold',
-      marginHorizontal: '16%',
-      marginBottom: 30,
-      textAlign: 'center',
-      color: 'white',
-    },
     image: {
-      width: 110,
-      height: 150,
+      width: 100,
+      height: 140,
       borderRadius: 12,
     },
+    textos:{
+      flex: 1, 
+      marginLeft: 10
+    },
     texttitle: {
-      color: 'white',
-      fontSize: font(14.5),
-      fontWeight: 'bold',
-      marginTop: -4,
+      color: s.color.white,
+      fontSize: s.fs(15),
+      fontFamily: s.ff.Bold,
+      lineHeight:16
     },
     parrafo: {
-      color: 'white',
-      fontSize: font(12),
+      color: s.color.white,
+      fontSize: s.fs(14),
       marginTop: 5,
+      fontFamily: s.ff.Regular
     },
   });
   

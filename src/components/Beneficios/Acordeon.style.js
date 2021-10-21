@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import  s from '../../Style'
 
 export const styles = StyleSheet.create({
     row: {
@@ -21,10 +22,11 @@ export const styles = StyleSheet.create({
     hueso: {
       height: 15,
       width: 15,
-      marginRight: '2%',
+      marginRight: '3%',
     },
     labelbeneficio: {
-      color: 'white',
+      color: s.color.white,
+      fontFamily: s.ff.SemiBold,
       fontSize: 14,
       flexDirection: 'row',
       justifyContent: 'center',
@@ -36,8 +38,10 @@ export const styles = StyleSheet.create({
       marginBottom: 18,
     },
     content: {
-      color: 'white',
+      color: s.color.white,
+      fontFamily: s.ff.Regular,
       fontSize: 15,
+      lineHeight: 18
     },
   });
   

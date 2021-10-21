@@ -1,7 +1,7 @@
 import React from 'react'
 import {  Image, Text, View } from 'react-native'
 import Card from '../../assets/card_member.png'
-import { styles } from './index.style'
+import { styles } from './Header.style'
 
 const Header = () => {
     return (

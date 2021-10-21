@@ -1,53 +1,65 @@
 import { StyleSheet } from "react-native";
+import s from '../../Style'
 
-const sumar = size =>(
-    console.log(size+10)
-)
+
 
 export const styles = StyleSheet.create({
     container: {
-      marginVertical: 50,
-      // textAlign:'center',
-      // alignItems:'center'
+      marginVertical: 40,
     },
+    title:{
+        textAlign: 'center',
+        fontFamily: s.ff.ExtraBold,
+        fontSize: s.fs(30),
+        marginHorizontal: '18%',
+        color: s.color.white,
+      },
+      subtitle:{
+        textAlign: 'center',
+        fontFamily: s.ff.Bold,
+        fontSize: s.fs(17),
+        marginVertical: 10,
+        color: 'white',
+      },
     input: {
-      marginVertical: 10,
+      marginTop: 20,
+      marginBottom: 10,
       height: 50,
       width: '80%',
-      // borderColor: '#e1e1e1',
-      // borderWidth: 1,
-      borderStyle: 'solid',
       borderRadius: 14,
-      backgroundColor: '#bf93f1',
+      backgroundColor: s.color.plum,
       marginHorizontal: '10%',
-      // alignContent:'center',
-      // alignItems:'center',
-      // justifyContent:'center',
-      color: 'white',
-      fontSize: sumar(26),
-    //   fontSize: 26,
-      padding: 0,
-      fontWeight: 'bold',
+      color: s.color.white,
+      fontSize: s.fs(24),
+      fontFamily: s.ff.Bold,
     },
     button: {
-      resizeMode: 'contain',
-      backgroundColor: '#ffc200',
-      // marginVertical: 10,
+      backgroundColor: s.color.gold,
       width: '80%',
-      height: 50,
-      borderStyle: 'solid',
-      borderRadius: 14,
-      //   backgroundColor: '#bf93f1',
       marginHorizontal: '10%',
+      height: 50,
+      borderRadius: 14,
+      paddingVertical: 16,
+      marginBottom:22
     },
-    texto: {
-      marginVertical: '4%',
-      fontSize: 16,
-      padding: 0,
-      fontWeight: 'bold',
+    textobutton: {
+      fontSize: s.fs(17),
+      fontFamily:s.ff.Bold,
       textAlign: 'center',
-      textAlignVertical: 'center',
-      color: 'black',
+      color: s.color.darkslategray,
+    },
+    resultado: {
+      margin: 5,
+      textAlign: 'center',
+      fontFamily: s.ff.Medium,
+      fontSize: 19,
+      color: 'white',
+    },
+    cifra:{
+      textAlign: 'center',
+      fontFamily: s.ff.Bold,
+      fontSize: 36,
+      color: '#ffc200',
     },
   });
   

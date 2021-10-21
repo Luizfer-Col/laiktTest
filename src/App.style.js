@@ -1,5 +1,8 @@
 import {Dimensions, StyleSheet} from 'react-native';
 // import {  } from 'react-native';
+ import  s from './Style'
+
+
 
 export let deviceWidth = Dimensions.get('window').width;
 let deviceHeight = Dimensions.get('window').height;
@@ -11,7 +14,7 @@ console.log(deviceHeight, "dh");
 const styles = StyleSheet.create({
   maincontainer: {
     width: deviceWidth,
-    backgroundColor: '#a47cd0',
+    backgroundColor: s.color.mediumpurple,
   },
 });
 

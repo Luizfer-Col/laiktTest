@@ -24,23 +24,11 @@ console.log(width, "w");
   return (
     <View style={styles.container}>
       <Text
-        style={{
-          textAlign: 'center',
-          fontWeight: 'bold',
-          fontSize: 24,
-          marginHorizontal: '20%',
-          color: 'white',
-        }}>
+        style={styles.title}>
         Calcula tu ahorro con la membresía
       </Text>
       <Text
-        style={{
-          textAlign: 'center',
-          fontWeight: 'bold',
-          fontSize: 16,
-          marginVertical: 10,
-          color: 'white',
-        }}>
+        style={styles.subtitle}>
         ¿Cuánto gastas al mes en tu peludo?
       </Text>
       <TextInput
@@ -52,37 +40,19 @@ console.log(width, "w");
       />
       <TouchableOpacity onPress={() => calcularAhorro(cantidad)}>
         <View style={styles.button}>
-          <Text style={styles.texto}>Calcular</Text>
+          <Text style={styles.textobutton}>Calcular</Text>
         </View>
       </TouchableOpacity>
       <Text
-        style={{
-          marginTop: 30,
-          textAlign: 'center',
-          fontWeight: 'bold',
-          fontSize: 16,
-          marginVertical: 10,
-          color: 'white',
-        }}>
+        style={styles.resultado}>
         Te ahorras
       </Text>
       <Text
-        style={{
-          textAlign: 'center',
-          fontWeight: 'bold',
-          fontSize: 24,
-          color: '#ffc200',
-        }}>
+        style={styles.cifra}>
         $<Text>{ahorro}</Text>
       </Text>
       <Text
-        style={{
-          textAlign: 'center',
-          fontWeight: 'bold',
-          fontSize: 16,
-          marginVertical: 10,
-          color: 'white',
-        }}>
+        style={styles.resultado}>
         al año
       </Text>
     </View>
