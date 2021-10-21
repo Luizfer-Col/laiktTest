@@ -4,6 +4,7 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
+  useWindowDimensions,
   View,
 } from 'react-native';
 import { styles } from './Calculadora.style';
@@ -16,6 +17,9 @@ const Calculadora = () => {
     const ahorrado = Math.ceil(num * 12 * 0.15);
     setAhorro(ahorrado);
   };
+  const { height, width } = useWindowDimensions();
+console.log(height, "h");
+console.log(width, "w");
 
   return (
     <View style={styles.container}>

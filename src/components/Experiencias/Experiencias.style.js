@@ -1,4 +1,9 @@
 import { StyleSheet } from "react-native";
+import { deviceWidth } from "../../App.style";
+
+const font = size =>(
+  deviceWidth>360?size:size-1
+)
 
 export const styles = StyleSheet.create({
     container: {
@@ -14,7 +19,7 @@ export const styles = StyleSheet.create({
       width: '86%',
     },
     title: {
-      fontSize: 30,
+      fontSize: font(30),
       fontWeight: 'bold',
       marginHorizontal: '16%',
       marginBottom: 30,
@@ -28,13 +33,13 @@ export const styles = StyleSheet.create({
     },
     texttitle: {
       color: 'white',
-      fontSize: 14.5,
+      fontSize: font(14.5),
       fontWeight: 'bold',
       marginTop: -4,
     },
     parrafo: {
       color: 'white',
-      fontSize: 12,
+      fontSize: font(12),
       marginTop: 5,
     },
   });

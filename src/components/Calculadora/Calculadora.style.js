@@ -1,5 +1,9 @@
 import { StyleSheet } from "react-native";
 
+const sumar = size =>(
+    console.log(size+10)
+)
+
 export const styles = StyleSheet.create({
     container: {
       marginVertical: 50,
@@ -20,7 +24,8 @@ export const styles = StyleSheet.create({
       // alignItems:'center',
       // justifyContent:'center',
       color: 'white',
-      fontSize: 26,
+      fontSize: sumar(26),
+    //   fontSize: 26,
       padding: 0,
       fontWeight: 'bold',
     },
