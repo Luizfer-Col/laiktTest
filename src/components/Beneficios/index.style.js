@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+
 import  s from '../../Style'
 
  const styles = StyleSheet.create({
@@ -12,13 +13,9 @@ import  s from '../../Style'
       marginHorizontal: '6%',
       marginTop: -25,
     },
-    beneficios: {
-      borderWidth: 1,
-      borderStyle: 'dashed',
-      borderTopColor: s.color.darkslateblue,
-      borderRightColor: s.color.darkslateblue,
-      borderLeftColor: s.color.darkslateblue,
-      borderBottomColor: s.color.gold,
+    dash: {
+      width:'100%', 
+      marginTop: 10
     }
   });
   

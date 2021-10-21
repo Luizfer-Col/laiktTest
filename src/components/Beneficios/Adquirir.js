@@ -16,7 +16,6 @@ const showAlert = (type) =>
     }
   );
 
-
 const Adquirir = () => {
   return (
     <View>
