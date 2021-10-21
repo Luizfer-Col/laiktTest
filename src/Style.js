@@ -11,8 +11,6 @@ const Styles = {
         plum: '#bf93f1',
         darkslategray:'#212529',
         white: '#ffffff'
-
-
     },
     ff:{
         Bold: "Causten-Bold",
@@ -26,7 +24,6 @@ const Styles = {
     fs: (size) => (
         deviceWidth>360?size:size-1
     )
-
 }
 
 export default Styles;
