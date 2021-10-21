@@ -4,16 +4,12 @@ import experiencias from '../../utils/Experiencias';
 import { styles } from './Experiencias.style';
 import s from '../../Style'
 
-
-
 const Experiencias = () => {
   return (
     <View>
-
       <Text style={styles.title}>
         Experiencias de LAIKA <Text style={{color: s.color.gold}}>Members</Text>
       </Text>
-
       {experiencias.map((item, index) => (
         <View style={styles.container} key={index}>
           <Image source={item.image} style={styles.image} />
@@ -22,8 +18,7 @@ const Experiencias = () => {
             <Text style={styles.parrafo}>{item.parrafo}</Text>
           </View>
         </View>
-      ))}
-      
+      ))}      
     </View>
   );
 };
