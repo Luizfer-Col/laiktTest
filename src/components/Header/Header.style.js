@@ -1,7 +1,6 @@
 import { StyleSheet } from "react-native";
 import  s from '../../Style'
 
-
 export const styles = StyleSheet.create({
     container:{
         alignItems:'center',
