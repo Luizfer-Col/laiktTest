@@ -1,14 +1,14 @@
 import React from 'react';
 import {ScrollView} from 'react-native';
 import styles from './App.style';
-import Members from './screens/Members';
+import Member from './screens/Member';
 
 const App = () => {
   return (
       <ScrollView 
       alignItems="center" 
       style={styles.maincontainer}>
-        <Members />
+        <Member />
       </ScrollView>
   );
 };
