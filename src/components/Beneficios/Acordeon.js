@@ -8,9 +8,8 @@ import {
   View,
 } from 'react-native';
 import otrosBeneficios from '../../utils/otrosBeneficios';
-import arrow from '../../assets/arrow_down.png'
-import { styles } from './Acordeon.style';
-
+import arrow from '../../assets/arrow_down.png';
+import {styles} from './Acordeon.style';
 
 const Acordeon = () => {
   const [expanded, setExpanded] = useState(false);
@@ -24,10 +23,8 @@ const Acordeon = () => {
     setExpanded(!expanded);
   };
 
-
   return (
     <View>
-
       <TouchableOpacity onPress={() => toggleExpand()} style={styles.row}>
         <Text style={styles.labelbeneficio}>
           Ver otros beneficios
@@ -54,10 +51,8 @@ const Acordeon = () => {
           ))}
         </View>
       )}
-
     </View>
   );
 };
 
 export default Acordeon;
-
