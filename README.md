@@ -1,5 +1,5 @@
 # laikaMember
-Aplicación movil creada con React Native CLi con 
+Aplicación movil creada con React Native CLi
 
 ## Pre-requisitos
 Esta aplicación fue creada con el ambiente de desarrollo que React Native CLI implementa.
