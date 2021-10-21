@@ -6,7 +6,7 @@ import s from '../../Style'
 
 const Experiencias = () => {
   return (
-    <View>
+    <View style={styles.experiencias}>
       <Text style={styles.title}>
         Experiencias de LAIKA <Text style={{color: s.color.gold}}>Members</Text>
       </Text>

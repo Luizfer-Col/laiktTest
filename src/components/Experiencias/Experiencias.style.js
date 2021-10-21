@@ -3,6 +3,9 @@ import { deviceWidth } from "../../App.style";
 import s from '../../Style'
 
 export const styles = StyleSheet.create({
+  experiencias:{
+    marginBottom:'10%'
+  },
     title: {
       fontSize: s.fs(30),
       marginHorizontal: '16%',

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Alert, Button, Image, Text, TouchableOpacity, View} from 'react-native';
+import {Alert, Image, Text, TouchableOpacity, View} from 'react-native';
 import Card from '../../assets/card_member.png';
 import Arrow from '../../assets/arrow_down.png';
 import {styles} from './Header.style';

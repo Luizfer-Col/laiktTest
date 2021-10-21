@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import { View } from 'react-native';
 import Header from '../components/Header/Header';
 import Beneficios from '../components/Beneficios/index';
 import Calculadora from '../components/Calculadora/Calculadora';
